@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Physical fitness survey</title>
+    </head>
+  <body>
+    <!--Start Header -->
+    <header>
+    <h1 id="title">Physical fitness survey</h1>
+    <p id="description">Use our questionnaire to survey your physical condition.</p>
+    </header>
+    <!--End Header -->
+    
+     <!--Start Form -->
+    <form id="survey-form" action="#">
+       <!--Start Input Fields -->
+      <label id="name-label" for=name>Name</label>
+      <input class="input-style" id="name" type="text" placeholder="Enter Your Name" required>
+      
+     <label id="email-label" for=name>Email</label>
+      <input class="input-style" id="email" type="email" placeholder="Enter Your Email" required>
+      
+      <label id="number-label" for=name>Age</label>
+      <input class="input-style" id="number" type="number" placeholder="Enter Your Age" min="1" max="99" required>
+    <!--End Input Fields -->
+    
+    <!--Start Dropdown -->
+    <p>How often do you exercise</p>
+    <select class="input-style" id="dropdown" type="dropdown" name="frequency">
+     <option value="some1" disabled selected>Select frequency</option>
+     <option value="max">Everday</option>
+     <option value="frequent">Every other day</option>
+     <option value="often">Once per week</option>
+     <option value="mild">Several times per month</option>
+     <option value="min">Less often</option>
+    </select> 
+    <!--End Dropdown -->
+    
+    <!--Start Radio Buttons -->
+    <p> How do you do most of your regular exercise?</p>
+    <label>
+      <input class="size" name="options" type="radio" value="group" checked> In a group
+    </label>
+    
+    <label>
+      <input class="size" name="options" type="radio" value="pair" > In a pair
+    </label>
+      
+      <label>
+      <input class="size" name="options" type="radio" value="alone" > Alone
+    </label>
+      
+      
+   <p>Do you know your current BMI?</p>
+    <div class="grid"><label>
+      <input class="size" name="bmi" type="radio" value="Underweight" checked> Less than 18.5 (Underweight)
+    </label>
+      
+      <label>
+      <input class="size" name="bmi" type="radio" value="Ideal" checked> 18.5-25 (Ideal weight)
+    </label>
+      
+      <label>
+      <input class="size" name="bmi" type="radio" value="Overweight" checked> 25-30 (Overweight)
+    </label>
+      
+      <label>
+      <input class="size" name="bmi" type="radio" value="Moderate" checked> 30-35 (Moderate obesity)
+    </label>
+      
+      <label>
+      <input class="size" name="bmi" type="radio" value="Obesity" checked> 35-40 (Obesity)
+    </label>
+      
+      <label>
+      <input class="size" name="bmi" type="radio" value="Morbidly" checked> More than 40 (Morbidly obese)
+    </label>
+      </div>
+    
+    <!--End Radio Buttons -->
+    
+    <!--Start CheckBox -->
+    
+    <p>Do you do any of the sports below?</p>
+    <div class="grid">
+    <label>
+      <input class="size" type="checkbox" name="sports" value="1"> Running
+    </label>
+      
+      <label>
+      <input class="size" type="checkbox" name="sports" value="2"> Swimming
+    </label>
+      
+      <label>
+      <input class="size" type="checkbox" name="sports" value="2"> Riding
+    </label>
+      
+      <label>
+      <input class="size" type="checkbox" name="sports" value="2"> Roller scating
+    </label>
+      
+      <label>
+      <input class="size" type="checkbox" name="sports" value="2"> Extreme sports
+    </label>
+      
+      <label>
+      <input class="size" type="checkbox" name="sports" value="2"> Martial arts
+    </label>
+      </div>
+    
+  <!--End CheckBox -->
+    
+  <!--Start Textarea & Submit button --> 
+      <p>Additional Comments</p>
+    <textarea class="input-style comments" id="comments" placeholder="Enter your comments here"></textarea>
+    <button id="submit" type="submit">Submit</button>
+    
+    </form>
+    <!-- End Form -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
